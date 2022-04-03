@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">Telegram Monet</string>
+    <string name="light_button_text">Create light theme</string>
+    <string name="dark_button_text">Create dark theme</string>
+</resources>

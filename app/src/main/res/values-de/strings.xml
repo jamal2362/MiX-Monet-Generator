@@ -1,0 +1,4 @@
+<resources>
+    <string name="light_button_text">Helles Design erstellen</string>
+    <string name="dark_button_text">Dunkles Design erstellen</string>
+</resources>
