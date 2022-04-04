@@ -10,8 +10,8 @@ android {
         applicationId 'com.jamal2367.tgmonet'
         minSdkVersion 31
         targetSdkVersion 32
-        versionCode 10
-        versionName '1.0'
+        versionCode 20
+        versionName '2.0'
         resConfigs 'en', 'de'
         setProperty("archivesBaseName", 'Telegram_Monet_' + versionName)
     }
