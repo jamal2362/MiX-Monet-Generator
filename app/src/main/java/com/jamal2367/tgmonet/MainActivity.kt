@@ -173,9 +173,9 @@ class MainActivity : AppCompatActivity() {
             .replace("n2_10", n2_10.toString() )
 
         File(applicationContext.cacheDir, outputFile).writeText(text = darkThemeImport)
+
         val file = File(applicationContext.cacheDir, outputFile)
         val uri = FileProvider.getUriForFile(applicationContext, "$packageName.provider", file)
-
         val intent = Intent(Intent.ACTION_SEND)
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         intent.type = "document/*"
