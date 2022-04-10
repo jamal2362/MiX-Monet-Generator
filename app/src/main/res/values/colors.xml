@@ -71,4 +71,5 @@
   <color name="app_logo_background">@android:color/system_accent1_700</color>
   <color name="launcher_icon_background">@android:color/system_accent1_100</color>
   <color name="launcher_icon">@android:color/system_neutral2_700</color>
+  <color name="text_default">@android:color/system_neutral1_50</color>
 </resources>

@@ -2,8 +2,6 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:background">@android:color/system_neutral1_50</item>
-        <item name="android:statusBarColor">@android:color/system_neutral1_50</item>
-        <item name="android:navigationBarColor">@android:color/system_neutral1_50</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
 

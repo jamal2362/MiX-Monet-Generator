@@ -1,4 +1,6 @@
 <resources>
     <string name="light_button_text">Helles Design erstellen</string>
     <string name="dark_button_text">Dunkles Design erstellen</string>
+    <string name="light_theme">Helles Design</string>
+    <string name="dark_theme">Dunkles Design</string>
 </resources>

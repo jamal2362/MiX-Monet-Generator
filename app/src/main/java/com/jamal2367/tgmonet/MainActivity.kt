@@ -1,13 +1,15 @@
 package com.jamal2367.tgmonet
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Button
-import androidx.annotation.StringRes
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.view.WindowCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -15,25 +17,42 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_main)
 
-        val buttonDark: Button = findViewById(R.id.buttonDark)
         val buttonLight: Button = findViewById(R.id.buttonLight)
+        val buttonDark: Button = findViewById(R.id.buttonDark)
+        val buttonGitHub : FloatingActionButton = findViewById(R.id.buttonGithub)
+        val buttonTelegram : FloatingActionButton = findViewById(R.id.buttonTelegram)
 
         buttonLight.setOnClickListener {
             val lightMonetFile = "monet_light.attheme"
             val outputFile = "Telegram_Monet_Light.attheme"
-            val theme = "Light theme"
+            val theme : String = resources.getString(R.string.light_theme)
             shareTheme(lightMonetFile, outputFile, theme)
         }
 
         buttonDark.setOnClickListener {
             val darkMonetFile = "monet_dark.attheme"
             val outputFile = "Telegram_Monet_Dark.attheme"
-            val theme = "Dark theme"
+            val theme : String = resources.getString(R.string.dark_theme)
             shareTheme(darkMonetFile, outputFile, theme)
         }
+
+        buttonGitHub.setOnClickListener{
+            openLink("https://github.com/jamal2362/Telegram-Monet")
+        }
+
+        buttonTelegram.setOnClickListener{
+            openLink("https://t.me/jamal2367")
+        }
+    }
+
+    private fun openLink(link: String){
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(link)
+        startActivity(i)
     }
 
     @Suppress("LocalVariableName")
