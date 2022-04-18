@@ -24,7 +24,7 @@
             android:layout_marginBottom="96dp"
             android:background="@android:color/transparent"
             android:contentDescription="@null"
-            android:src="@drawable/ic_applogo" />
+            app:srcCompat="@drawable/ic_applogo" />
 
         <Button
             android:id="@+id/buttonLight"
