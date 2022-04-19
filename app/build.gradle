@@ -13,6 +13,7 @@ android {
         versionCode 50
         versionName "5.0"
         resConfigs 'en', 'de'
+	     setProperty("archivesBaseName", 'Telegram_Monet_' + versionName)
     }
 
     buildTypes {
