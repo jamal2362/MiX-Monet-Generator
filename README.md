@@ -1,2 +1,2 @@
-# Telegram-Monet
-Create Monet Themes for Telegram (Android)
+# Monet-Generator
+Create Monet Themes for Telegram and Telegram X (Android)
