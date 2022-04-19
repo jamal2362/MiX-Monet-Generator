@@ -7,13 +7,12 @@ android {
     buildToolsVersion '32.0.0'
 
     defaultConfig {
-        applicationId 'com.jamal2367.tgmonet'
-        minSdkVersion 31
-        targetSdkVersion 32
-        versionCode 40
-        versionName '4.0'
+        applicationId "com.jamal2367.tgmonet"
+        minSdk 31
+        targetSdk 32
+        versionCode 50
+        versionName "5.0"
         resConfigs 'en', 'de'
-        setProperty("archivesBaseName", 'Telegram_Monet_' + versionName)
     }
 
     buildTypes {
@@ -30,18 +29,16 @@ android {
         }
     }
 
-    kotlinOptions {
-        jvmTarget = '11'
-    }
-
-    viewBinding {
-        enabled = true
-    }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+
 }
 
 dependencies {
@@ -52,4 +49,8 @@ dependencies {
 
     // Google //
     implementation 'com.google.android.material:material:1.7.0-alpha01'
+
+    // AndroidX //
+    implementation "androidx.navigation:navigation-fragment-ktx:2.4.2"
+    implementation "androidx.navigation:navigation-ui-ktx:2.4.2"
 }

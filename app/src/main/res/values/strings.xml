@@ -1,7 +1,17 @@
 <resources>
-    <string name="app_name" translatable="false">Telegram Monet</string>
-    <string name="light_button_text">Create light theme</string>
+    <string name="app_name">Monet Generator</string>
+    <string name="about_author">Created by Jamal2367</string>
+    <string name="about_feedback">To Telegram</string>
+    <string name="about_info">This application is not supported or produced by Telegram.</string>
+    <string name="about_sources">View Source Code</string>
+    <string name="about">About</string>
     <string name="dark_button_text">Create dark theme</string>
-    <string name="light_theme">Light Theme</string>
     <string name="dark_theme">Dark Theme</string>
+    <string name="light_button_text">Create light theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="telegram_x">Telegram X</string>
+    <string name="telegram">Telegram</string>
+    <string name="tg_generator_info">\"Share\" dialog will be opened with the generated theme. Choose Telegram and save it to \"Saved Messages\" or other place.</string>
+    <string name="tgx_generator_info">\"Share\" dialog will be opened with the generated theme. Choose Telegram X and save it to \"Saved Messages\" or other place.</string>
+    <string name="version">Version: %1$s (%2$s)</string>
 </resources>

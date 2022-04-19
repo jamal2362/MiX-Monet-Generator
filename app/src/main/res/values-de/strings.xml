@@ -1,6 +1,17 @@
 <resources>
-    <string name="light_button_text">Helles Design erstellen</string>
+    <string name="app_name">Monet Generator</string>
+    <string name="about_author">Erstellt von \"Jamal2367\"️</string>
+    <string name="about_feedback">Zu Telegram</string>
+    <string name="about_info">Diese Anwendung wird nicht von Telegram unterstützt oder produziert.</string>
+    <string name="about_sources">Quellcode anzeigen</string>
+    <string name="about">Über</string>
     <string name="dark_button_text">Dunkles Design erstellen</string>
-    <string name="light_theme">Helles Design</string>
     <string name="dark_theme">Dunkles Design</string>
+    <string name="light_button_text">Helles Design erstellen</string>
+    <string name="light_theme">Helles Design</string>
+    <string name="telegram_x">Telegram X</string>
+    <string name="telegram">Telegram</string>
+    <string name="tg_generator_info">Das Dialogfeld zum \"Teilen\" wird mit dem erstellten Design geöffnet. Wähle Telegram aus und speichere es unter \"Gespeicherte Nachrichten\" oder an einem anderen Ort.</string>
+    <string name="tgx_generator_info">Das Dialogfeld zum \"Teilen\" wird mit dem erstellten Design geöffnet. Wähle Telegram X aus und speichere es unter \"Gespeicherte Nachrichten\" oder an einem anderen Ort.</string>
+    <string name="version">Version: %1$s (%2$s)</string>
 </resources>

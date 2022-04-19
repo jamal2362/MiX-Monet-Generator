@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/tggeneratorFragment">
+
+    <fragment
+        android:id="@+id/tggeneratorFragment"
+        android:name="com.jamal2367.tgmonet.ui.TGGeneratorFragment"
+        android:label="@string/telegram" />
+
+    <fragment
+        android:id="@+id/tgxgeneratorFragment"
+        android:name="com.jamal2367.tgmonet.ui.TGXGeneratorFragment"
+        android:label="@string/telegram_x" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.jamal2367.tgmonet.ui.AboutFragment"
+        android:label="@string/about" />
+</navigation>
