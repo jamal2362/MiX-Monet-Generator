@@ -83,4 +83,6 @@
 	<entry key="tint_tab_indicator_selected">Light_Accent</entry>
 	<entry key="tint_widget_off">#FF5F6368</entry>
 	<entry key="tint_widget_on">Light_Accent</entry>
+	<!-- <entry key="tint_file">#000003E9</entry> -->
+	<!-- <entry key="tint_icon_bookmark">#000003E9</entry> -->
 </properties>
