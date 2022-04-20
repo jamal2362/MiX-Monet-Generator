@@ -54,7 +54,6 @@
             android:id="@+id/buttonLight"
             style="@style/Widget.App.ButtonStyle"
             android:layout_width="match_parent"
-
             android:text="@string/light_button_text"
             app:icon="@drawable/ic_twotone_light_mode_24" />
 
@@ -62,7 +61,6 @@
             android:id="@+id/buttonDark"
             style="@style/Widget.App.ButtonStyle"
             android:layout_width="match_parent"
-
             android:layout_gravity="center"
             android:text="@string/dark_button_text"
             app:icon="@drawable/ic_twotone_dark_mode_24" />
