@@ -14,12 +14,14 @@ import java.io.File
 class TGGeneratorFragment: Fragment(R.layout.fragment_tg) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enterTransition = MaterialFadeThrough()
         returnTransition = MaterialFadeThrough()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         view.findViewById<View>(R.id.buttonLight).setOnClickListener {
             val lightMonetFile = "monet_light.attheme"
             val outputFile = "Telegram_Monet_Light.attheme"

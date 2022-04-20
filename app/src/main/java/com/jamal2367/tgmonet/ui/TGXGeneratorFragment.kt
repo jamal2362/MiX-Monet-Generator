@@ -15,12 +15,14 @@ import java.io.File
 class TGXGeneratorFragment: Fragment(R.layout.fragment_tgx) {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+
     enterTransition = MaterialFadeThrough()
     returnTransition = MaterialFadeThrough()
   }
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
+
     view.findViewById<View>(R.id.start).setOnClickListener {
       val file = File(requireContext().cacheDir, "Telegram_X_Monet.tgx-theme")
 
