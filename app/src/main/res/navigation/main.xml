@@ -15,6 +15,11 @@
         android:label="@string/telegram_x" />
 
     <fragment
+        android:id="@+id/mixgeneratorFragment"
+        android:name="com.jamal2367.tgmonet.ui.MiXGeneratorFragment"
+        android:label="@string/mixplorer" />
+
+    <fragment
         android:id="@+id/aboutFragment"
         android:name="com.jamal2367.tgmonet.ui.AboutFragment"
         android:label="@string/about" />

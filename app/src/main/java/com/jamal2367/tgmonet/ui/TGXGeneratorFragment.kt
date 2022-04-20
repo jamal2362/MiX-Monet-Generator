@@ -23,7 +23,7 @@ class TGXGeneratorFragment: Fragment(R.layout.fragment_tgx) {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
-    view.findViewById<View>(R.id.start).setOnClickListener {
+    view.findViewById<View>(R.id.buttonTGXDark).setOnClickListener {
       val file = File(requireContext().cacheDir, "Telegram_X_Monet.tgx-theme")
 
       if (file.exists()) file.delete()

@@ -8,7 +8,7 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/buttonTGXDark"
         style="@style/Widget.App.ButtonStyle"
         android:layout_width="match_parent"
         android:layout_gravity="center"
