@@ -13,7 +13,7 @@ android {
         versionCode 60
         versionName "6.0"
         resConfigs 'en', 'de'
-        setProperty("archivesBaseName", 'Telegram_Monet_' + versionName)
+        setProperty("archivesBaseName", 'Monet_Generator' + versionName)
     }
 
     buildTypes {
