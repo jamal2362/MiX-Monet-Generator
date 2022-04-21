@@ -1,11 +1,13 @@
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/system_neutral1_50</item>
+        <item name="android:colorBackground">@android:color/system_neutral1_10</item>
+        <item name="android:statusBarColor">@android:color/system_neutral1_10</item>
+        <item name="android:navigationBarColor">@android:color/system_neutral2_100</item>
+        <item name="colorControlHighlight">@color/system_accent_color</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
-        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@android:color/system_accent1_700</item>
@@ -20,8 +22,9 @@
     </style>
 
     <style name="Widget.App.CardView" parent="@style/Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/bottom_navigation_background</item>
         <item name="strokeWidth">2dp</item>
-        <item name="cardCornerRadius">32dp</item>
+        <item name="cardCornerRadius">16dp</item>
         <item name="strokeColor">@color/system_accent_color</item>
     </style>
 
