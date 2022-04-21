@@ -28,7 +28,25 @@ class TGXGeneratorFragment: Fragment(R.layout.fragment_tgx) {
 
       if (file.exists()) file.delete()
       file.createNewFile()
-      file.writeText(Generator.generateFileContent(ContextThemeWrapper(requireContext(), android.R.style.Theme_DeviceDefault)))
+      file.writeText(Generator.generateFileContentDark(ContextThemeWrapper(requireContext(), android.R.style.Theme_DeviceDefault)))
+
+      val fileUri = FileProvider.getUriForFile(requireContext(), "${BuildConfig.APPLICATION_ID}.fileprovider", file)
+
+      requireActivity().startActivity(Intent.createChooser(Intent().apply {
+        action = Intent.ACTION_SEND
+
+        putExtra(Intent.EXTRA_STREAM, fileUri)
+        type = "application/octet-stream"
+
+        flags = Intent.FLAG_GRANT_READ_URI_PERMISSION }, "Share a theme"))
+    }
+
+    view.findViewById<View>(R.id.buttonTGXLight).setOnClickListener {
+      val file = File(requireContext().cacheDir, "Telegram_X_Monet_Light.tgx-theme")
+
+      if (file.exists()) file.delete()
+      file.createNewFile()
+      file.writeText(Generator.generateFileContentLight(ContextThemeWrapper(requireContext(), android.R.style.Theme_DeviceDefault)))
 
       val fileUri = FileProvider.getUriForFile(requireContext(), "${BuildConfig.APPLICATION_ID}.fileprovider", file)
 

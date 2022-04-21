@@ -3,19 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
-
-    <Button
-        android:id="@+id/buttonTGXDark"
-        style="@style/Widget.App.ButtonStyle"
-        android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/dark_button_text"
-        app:icon="@drawable/ic_twotone_dark_mode_24" />
+    android:layout_height="match_parent">
 
     <com.google.android.material.card.MaterialCardView
         style="@style/Widget.App.CardView"
@@ -29,8 +17,7 @@
         <LinearLayout
             android:id="@+id/info"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="match_parent"
             android:padding="16dp"
             tools:ignore="UseCompoundDrawables">
 
@@ -54,5 +41,29 @@
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonTGXLight"
+            style="@style/Widget.App.ButtonStyle"
+            android:layout_width="match_parent"
+            android:text="@string/light_button_text"
+            app:icon="@drawable/ic_twotone_light_mode_24" />
+
+        <Button
+            android:id="@+id/buttonTGXDark"
+            style="@style/Widget.App.ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/dark_button_text"
+            app:icon="@drawable/ic_twotone_dark_mode_24" />
+    </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
