@@ -23,14 +23,14 @@ class TGGeneratorFragment: Fragment(R.layout.fragment_tg) {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<View>(R.id.buttonTGLight).setOnClickListener {
-            val lightMonetFile = "monet_light.attheme"
+            val lightMonetFile = "light_tg_monet.attheme"
             val outputFile = "Telegram_Monet_Light.attheme"
             val theme : String = resources.getString(R.string.light_theme)
             shareTheme(lightMonetFile, outputFile, theme)
         }
 
         view.findViewById<View>(R.id.buttonTGDark).setOnClickListener {
-            val darkMonetFile = "monet_dark.attheme"
+            val darkMonetFile = "dark_tg_monet.attheme"
             val outputFile = "Telegram_Monet_Dark.attheme"
             val theme : String = resources.getString(R.string.dark_theme)
             shareTheme(darkMonetFile, outputFile, theme)
