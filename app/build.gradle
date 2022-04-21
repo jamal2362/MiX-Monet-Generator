@@ -10,8 +10,8 @@ android {
         applicationId "com.jamal2367.tgmonet"
         minSdk 31
         targetSdk 32
-        versionCode 60
-        versionName "6.0"
+        versionCode 70
+        versionName "7.0"
         resConfigs 'en', 'de'
         setProperty("archivesBaseName", 'Monet_Generator_' + versionName)
     }
