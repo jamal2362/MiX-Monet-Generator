@@ -32,6 +32,7 @@
         <item name="backgroundTint">@color/bottom_navigation_background</item>
         <item name="itemRippleColor">@android:color/transparent</item>
         <item name="itemIconTint">@color/system_accent_color</item>
+        <item name="itemTextColor">@color/system_accent_color</item>
     </style>
 
     <style name="Widget.App.ButtonStyle" parent="@style/Widget.Material3.Button.OutlinedButton.Icon">
