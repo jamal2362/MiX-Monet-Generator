@@ -12,8 +12,8 @@
     <string name="mixplorer">MiXplorer</string>
     <string name="mix_generator_info">Das Dialogfeld zum \"Teilen\" wird mit dem erstellten Design geöffnet. Wähle MiXplorer aus und speichere es auf dem Internen Speicher. Packe die .xml-Datei in eine .mit-Datei und importiere diese dann.</string>
     <string name="telegram_x">Telegram X</string>
-    <string name="telegram">Telegram</string>
-    <string name="tg_generator_info">Das Dialogfeld zum \"Teilen\" wird mit dem erstellten Design geöffnet. Wähle Telegram aus und speichere es unter \"Gespeicherte Nachrichten\" oder an einem anderen Ort.</string>
+    <string name="telegram">Telegram &amp; Plus</string>
+    <string name="tg_generator_info">Das Dialogfeld zum \"Teilen\" wird mit dem erstellten Design geöffnet. Wähle Telegram oder Plus Messenger aus und speichere es unter \"Gespeicherte Nachrichten\" oder an einem anderen Ort.</string>
     <string name="tgx_generator_info">Das Dialogfeld zum \"Teilen\" wird mit dem erstellten Design geöffnet. Wähle Telegram X aus und speichere es unter \"Gespeicherte Nachrichten\" oder an einem anderen Ort.</string>
     <string name="version">Version: %1$s (%2$s)</string>
 </resources>

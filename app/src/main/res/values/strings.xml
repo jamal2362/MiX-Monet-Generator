@@ -12,8 +12,8 @@
     <string name="mixplorer">MiXplorer</string>
     <string name="mix_generator_info">\"Share\" dialog will be opened with the generated theme. Select MiXplorer and save it to the internal storage. Pack the .xml file into a .mit file and then import it.</string>
     <string name="telegram_x">Telegram X</string>
-    <string name="telegram">Telegram</string>
-    <string name="tg_generator_info">\"Share\" dialog will be opened with the generated theme. Choose Telegram and save it to \"Saved Messages\" or other place.</string>
+    <string name="telegram">Telegram &amp; Plus</string>
+    <string name="tg_generator_info">\"Share\" dialog will be opened with the generated theme. Choose Telegram or Plus Messenger and save it to \"Saved Messages\" or other place.</string>
     <string name="tgx_generator_info">\"Share\" dialog will be opened with the generated theme. Choose Telegram X and save it to \"Saved Messages\" or other place.</string>
     <string name="version">Version: %1$s (%2$s)</string>
 </resources>
