@@ -63,7 +63,8 @@ class MiXGeneratorFragment: Fragment(R.layout.fragment_mix) {
         File(requireActivity().cacheDir, outputFile).writeText(text = darkThemeImport)
 
         val file = File(requireActivity().cacheDir, outputFile)
-        val uri = FileProvider.getUriForFile(requireActivity(), "${BuildConfig.APPLICATION_ID}.fileprovider", file)
+        val uri = FileProvider.getUriForFile(requireActivity(), BuildConfig.APPLICATION_ID + ".provider", file)
+
         val intent = Intent(Intent.ACTION_SEND)
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         intent.type = "document/*"

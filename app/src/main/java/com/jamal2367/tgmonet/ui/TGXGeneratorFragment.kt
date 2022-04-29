@@ -30,14 +30,12 @@ class TGXGeneratorFragment: Fragment(R.layout.fragment_tgx) {
       file.createNewFile()
       file.writeText(Generator.generateFileContentDark(ContextThemeWrapper(requireContext(), android.R.style.Theme_DeviceDefault)))
 
-      val fileUri = FileProvider.getUriForFile(requireContext(), "${BuildConfig.APPLICATION_ID}.fileprovider", file)
+      val fileUri = FileProvider.getUriForFile(requireActivity(), BuildConfig.APPLICATION_ID + ".provider", file)
 
       requireActivity().startActivity(Intent.createChooser(Intent().apply {
         action = Intent.ACTION_SEND
-
         putExtra(Intent.EXTRA_STREAM, fileUri)
         type = "application/octet-stream"
-
         flags = Intent.FLAG_GRANT_READ_URI_PERMISSION }, "Share a theme"))
     }
 
@@ -48,14 +46,12 @@ class TGXGeneratorFragment: Fragment(R.layout.fragment_tgx) {
       file.createNewFile()
       file.writeText(Generator.generateFileContentLight(ContextThemeWrapper(requireContext(), android.R.style.Theme_DeviceDefault)))
 
-      val fileUri = FileProvider.getUriForFile(requireContext(), "${BuildConfig.APPLICATION_ID}.fileprovider", file)
+      val fileUri = FileProvider.getUriForFile(requireActivity(), BuildConfig.APPLICATION_ID + ".provider", file)
 
       requireActivity().startActivity(Intent.createChooser(Intent().apply {
         action = Intent.ACTION_SEND
-
         putExtra(Intent.EXTRA_STREAM, fileUri)
         type = "application/octet-stream"
-
         flags = Intent.FLAG_GRANT_READ_URI_PERMISSION }, "Share a theme"))
     }
   }
