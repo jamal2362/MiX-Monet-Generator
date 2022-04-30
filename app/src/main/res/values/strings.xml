@@ -5,8 +5,10 @@
     <string name="about_info">This application is not supported/produced by Telegram or MiXplorer.</string>
     <string name="about_sources">View Source Code</string>
     <string name="about">About</string>
+    <string name="assistance">Assistance</string>
     <string name="dark_button_text">Create dark theme</string>
     <string name="dark_theme">Dark Theme</string>
+    <string name="help">Help</string>
     <string name="light_button_text">Create light theme</string>
     <string name="light_theme">Light Theme</string>
     <string name="mixplorer">MiXplorer</string>

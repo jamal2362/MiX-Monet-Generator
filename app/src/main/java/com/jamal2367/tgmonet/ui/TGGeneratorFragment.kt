@@ -6,9 +6,10 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.transition.MaterialFadeThrough
 import com.jamal2367.tgmonet.BuildConfig
 import com.jamal2367.tgmonet.R
-import com.google.android.material.transition.MaterialFadeThrough
 import java.io.File
 
 class TGGeneratorFragment: Fragment(R.layout.fragment_tg) {
@@ -40,6 +41,10 @@ class TGGeneratorFragment: Fragment(R.layout.fragment_tg) {
             File(requireActivity().cacheDir, fileName).writeText(text = themeString)
             val themeName: String = resources.getString(R.string.dark_theme)
             shareTheme(themeName, fileName)
+        }
+
+        view.findViewById<View>(R.id.infoTG).setOnClickListener {
+            dialogTG()
         }
     }
 
@@ -109,7 +114,8 @@ class TGGeneratorFragment: Fragment(R.layout.fragment_tg) {
             "n2_1000" to ContextCompat.getColor(requireActivity(), R.color.system_neutral2_1000),
             "n2_100" to ContextCompat.getColor(requireActivity(), R.color.system_neutral2_100),
             "n2_10" to ContextCompat.getColor(requireActivity(), R.color.system_neutral2_10),
-            "n2_50" to ContextCompat.getColor(requireActivity(), R.color.system_neutral2_50),)
+            "n2_50" to ContextCompat.getColor(requireActivity(), R.color.system_neutral2_50),
+        )
 
         var themeText = file.replace("\$", "")
 
@@ -129,6 +135,17 @@ class TGGeneratorFragment: Fragment(R.layout.fragment_tg) {
         intent.putExtra(Intent.EXTRA_STREAM, uri)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(Intent.createChooser(intent, theme))
+    }
+
+    private fun dialogTG() {
+        MaterialAlertDialogBuilder(requireActivity())
+            .setTitle(R.string.assistance)
+            .setIcon(R.drawable.ic_twotone_info_24)
+            .setMessage(R.string.tg_generator_info)
+            .setNegativeButton(android.R.string.cancel) { _, _ ->
+                // Close dialog
+            }
+            .show()
     }
 }
 

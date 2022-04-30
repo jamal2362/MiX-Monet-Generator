@@ -6,6 +6,7 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.transition.MaterialFadeThrough
 import com.jamal2367.tgmonet.BuildConfig
 import com.jamal2367.tgmonet.R
@@ -34,6 +35,10 @@ class MiXGeneratorFragment: Fragment(R.layout.fragment_mix) {
             val outputFile = "properties.xml"
             val theme : String = resources.getString(R.string.dark_theme)
             shareTheme(darkMonetFile, outputFile, theme)
+        }
+
+        view.findViewById<View>(R.id.infoMIX).setOnClickListener {
+            dialogMIX()
         }
     }
 
@@ -73,4 +78,14 @@ class MiXGeneratorFragment: Fragment(R.layout.fragment_mix) {
         startActivity(Intent.createChooser(intent, theme))
     }
 
+    private fun dialogMIX() {
+        MaterialAlertDialogBuilder(requireActivity())
+            .setTitle(R.string.assistance)
+            .setIcon(R.drawable.ic_twotone_info_24)
+            .setMessage(R.string.mix_generator_info)
+            .setNegativeButton(android.R.string.cancel) { _, _ ->
+                // Close dialog
+            }
+            .show()
+    }
 }

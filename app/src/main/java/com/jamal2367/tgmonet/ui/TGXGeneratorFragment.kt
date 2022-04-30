@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.jamal2367.tgmonet.BuildConfig
 import com.jamal2367.tgmonet.R
 import com.jamal2367.tgmonet.data.tgx.Generator
@@ -54,5 +55,20 @@ class TGXGeneratorFragment: Fragment(R.layout.fragment_tgx) {
         type = "application/octet-stream"
         flags = Intent.FLAG_GRANT_READ_URI_PERMISSION }, "Share a theme"))
     }
+
+    view.findViewById<View>(R.id.infoTGX).setOnClickListener {
+      dialogTGX()
+    }
+  }
+
+  private fun dialogTGX() {
+    MaterialAlertDialogBuilder(requireActivity())
+      .setTitle(R.string.assistance)
+      .setIcon(R.drawable.ic_twotone_info_24)
+      .setMessage(R.string.tgx_generator_info)
+      .setNegativeButton(android.R.string.cancel) { _, _ ->
+        // Close dialog
+      }
+      .show()
   }
 }

@@ -6,6 +6,7 @@
         <item name="android:navigationBarColor">@android:color/system_neutral2_100</item>
         <item name="colorControlHighlight">@color/system_accent_color</item>
         <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
 
@@ -42,5 +43,11 @@
         <item name="iconSize">24dp</item>
         <item name="strokeWidth">2dp</item>
         <item name="android:layout_height">72dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/bottom_navigation_background</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="android:backgroundDimAmount">0.64</item>
     </style>
 </resources>
