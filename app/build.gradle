@@ -7,13 +7,13 @@ android {
     buildToolsVersion '32.0.0'
 
     defaultConfig {
-        applicationId "com.jamal2367.tgmonet"
+        applicationId 'com.jamal2367.tgmonet'
         minSdk 31
         targetSdk 32
         versionCode 110
-        versionName "11.0"
+        versionName '11.0'
         resConfigs 'en', 'de'
-        setProperty("archivesBaseName", 'Monet_Generator_' + versionName)
+        setProperty('archivesBaseName', 'Monet_Generator_' + versionName)
     }
 
     buildTypes {
@@ -48,9 +48,9 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
 
     // Google //
-    implementation 'com.google.android.material:material:1.7.0-alpha01'
+    implementation 'com.google.android.material:material:1.7.0-alpha02'
 
     // AndroidX //
-    implementation "androidx.navigation:navigation-fragment-ktx:2.4.2"
-    implementation "androidx.navigation:navigation-ui-ktx:2.4.2"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
 }
