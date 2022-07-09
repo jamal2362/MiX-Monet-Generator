@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 
 android {
 
-    compileSdkVersion 32
-    buildToolsVersion '32.0.0'
+    compileSdkVersion 33
+    buildToolsVersion '33.0.0'
 
     defaultConfig {
         applicationId 'com.jamal2367.tgmonet'
         minSdk 31
-        targetSdk 32
+        targetSdk 33
         versionCode 120
         versionName '12.0'
         resConfigs 'en', 'de'
@@ -51,6 +51,6 @@ dependencies {
     implementation 'com.google.android.material:material:1.7.0-alpha02'
 
     // AndroidX //
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.0'
 }
