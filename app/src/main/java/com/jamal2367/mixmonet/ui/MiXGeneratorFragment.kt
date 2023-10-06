@@ -58,7 +58,7 @@ class MiXGeneratorFragment : Fragment(R.layout.fragment_mix) {
         val n11000 = "#${Integer.toHexString(ContextCompat.getColor(requireActivity(), R.color.system_neutral1_1000))}"
 
         // generate the theme
-        val darkThemeImport = requireActivity().assets.open(monetFile).bufferedReader().readLines().joinToString()
+        val themeImport = requireActivity().assets.open(monetFile).bufferedReader().readLines().joinToString()
             .replace(", ", "\n")
             .replace("Black_Background", n11000)
             .replace("Black_Highlight", n1900)
@@ -82,7 +82,7 @@ class MiXGeneratorFragment : Fragment(R.layout.fragment_mix) {
         val zipOutputStream = ZipOutputStream(FileOutputStream(zipFile))
         val entry = ZipEntry(outputFile)
         zipOutputStream.putNextEntry(entry)
-        val xmlBytes = darkThemeImport.toByteArray()
+        val xmlBytes = themeImport.toByteArray()
         zipOutputStream.write(xmlBytes)
         zipOutputStream.closeEntry()
         zipOutputStream.close()
