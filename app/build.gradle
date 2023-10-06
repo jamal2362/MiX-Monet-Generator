@@ -2,18 +2,17 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-
-    compileSdkVersion 33
-    buildToolsVersion '33.0.0'
+    namespace 'com.jamal2367.mixmonet'
+    compileSdk 34
 
     defaultConfig {
-        applicationId 'com.jamal2367.tgmonet'
+        applicationId 'com.jamal2367.mixmonet'
         minSdk 31
-        targetSdk 33
+        targetSdk 34
         versionCode 130
         versionName '13.0'
-        resConfigs 'en', 'de'
-        setProperty('archivesBaseName', 'Monet_Generator_' + versionName)
+        resourceConfigurations += ['en', 'de']
+        setProperty('archivesBaseName', 'MiX_Monet_Generator_' + versionName)
     }
 
     buildTypes {
@@ -48,9 +47,9 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
 
     // Google //
-    implementation 'com.google.android.material:material:1.9.0-beta01'
+    implementation 'com.google.android.material:material:1.9.0'
 
     // AndroidX //
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.3'
 }
