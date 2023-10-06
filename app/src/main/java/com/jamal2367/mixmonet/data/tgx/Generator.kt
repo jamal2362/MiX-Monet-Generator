@@ -1,10 +1,10 @@
-package com.jamal2367.tgmonet.data.tgx
+package com.jamal2367.mixmonet.data.tgx
 
 import android.content.Context
 import android.graphics.Color
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.ColorUtils
-import com.jamal2367.tgmonet.R
+import com.jamal2367.mixmonet.R
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.elevation.SurfaceColors
 

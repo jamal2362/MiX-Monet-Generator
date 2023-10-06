@@ -6,21 +6,21 @@
 
     <fragment
         android:id="@+id/tggeneratorFragment"
-        android:name="com.jamal2367.tgmonet.ui.TGGeneratorFragment"
+        android:name="com.jamal2367.mixmonet.ui.TGGeneratorFragment"
         android:label="@string/telegram" />
 
     <fragment
         android:id="@+id/tgxgeneratorFragment"
-        android:name="com.jamal2367.tgmonet.ui.TGXGeneratorFragment"
+        android:name="com.jamal2367.mixmonet.ui.TGXGeneratorFragment"
         android:label="@string/telegram_x" />
 
     <fragment
         android:id="@+id/mixgeneratorFragment"
-        android:name="com.jamal2367.tgmonet.ui.MiXGeneratorFragment"
+        android:name="com.jamal2367.mixmonet.ui.MiXGeneratorFragment"
         android:label="@string/mixplorer" />
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.jamal2367.tgmonet.ui.AboutFragment"
+        android:name="com.jamal2367.mixmonet.ui.AboutFragment"
         android:label="@string/about" />
 </navigation>

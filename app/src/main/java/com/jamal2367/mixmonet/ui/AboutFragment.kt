@@ -1,4 +1,4 @@
-package com.jamal2367.tgmonet.ui
+package com.jamal2367.mixmonet.ui
 
 import android.content.Intent
 import android.net.Uri
@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.jamal2367.tgmonet.BuildConfig.*
-import com.jamal2367.tgmonet.R
+import com.jamal2367.mixmonet.BuildConfig.*
+import com.jamal2367.mixmonet.R
 import com.google.android.material.transition.MaterialFadeThrough
 
 class AboutFragment: Fragment(R.layout.fragment_about) {

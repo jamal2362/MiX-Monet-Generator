@@ -1,4 +1,4 @@
-package com.jamal2367.tgmonet
+package com.jamal2367.mixmonet
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

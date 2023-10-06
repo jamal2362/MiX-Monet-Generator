@@ -1,4 +1,4 @@
-package com.jamal2367.tgmonet.ui
+package com.jamal2367.mixmonet.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,9 @@ import androidx.appcompat.view.ContextThemeWrapper
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.jamal2367.tgmonet.BuildConfig
-import com.jamal2367.tgmonet.R
-import com.jamal2367.tgmonet.data.tgx.Generator
+import com.jamal2367.mixmonet.BuildConfig
+import com.jamal2367.mixmonet.R
+import com.jamal2367.mixmonet.data.tgx.Generator
 import com.google.android.material.transition.MaterialFadeThrough
 import java.io.File
 
