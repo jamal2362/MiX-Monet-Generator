@@ -2,17 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
-    app:startDestination="@id/tggeneratorFragment">
-
-    <fragment
-        android:id="@+id/tggeneratorFragment"
-        android:name="com.jamal2367.mixmonet.ui.TGGeneratorFragment"
-        android:label="@string/telegram" />
-
-    <fragment
-        android:id="@+id/tgxgeneratorFragment"
-        android:name="com.jamal2367.mixmonet.ui.TGXGeneratorFragment"
-        android:label="@string/telegram_x" />
+    app:startDestination="@id/mixgeneratorFragment">
 
     <fragment
         android:id="@+id/mixgeneratorFragment"

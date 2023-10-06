@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:icon="@drawable/ic_telegram_24"
-        android:id="@+id/tggeneratorFragment"
-        android:title="@string/telegram" />
-    <item
-        android:icon="@drawable/ic_telegram_24"
-        android:id="@+id/tgxgeneratorFragment"
-        android:title="@string/telegram_x" />
-    <item
         android:icon="@drawable/ic_twotone_mixplorer_24"
         android:id="@+id/mixgeneratorFragment"
         android:title="@string/mixplorer" />

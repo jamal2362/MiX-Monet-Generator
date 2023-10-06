@@ -13,6 +13,7 @@ import com.google.android.material.transition.MaterialFadeThrough
 class AboutFragment: Fragment(R.layout.fragment_about) {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+
     enterTransition = MaterialFadeThrough()
     returnTransition = MaterialFadeThrough()
   }
