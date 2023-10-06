@@ -24,7 +24,7 @@ class AboutFragment: Fragment(R.layout.fragment_about) {
     val version : String = resources.getString(R.string.version, VERSION_NAME, BUILD_TYPE)
     view.findViewById<TextView>(R.id.version).text = version
     view.findViewById<View>(R.id.feedback).openLink("https://t.me/jamal2367")
-    view.findViewById<View>(R.id.source).openLink("https://github.com/jamal2362/Monet-Generator")
+    view.findViewById<View>(R.id.source).openLink("https://github.com/jamal2362/MiX-Monet-Generator")
   }
 
   private fun View.openLink(url: String) {

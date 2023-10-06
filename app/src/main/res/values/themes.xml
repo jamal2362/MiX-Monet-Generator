@@ -22,7 +22,7 @@
         <item name="colorOnSecondary">@android:color/system_neutral1_900</item>
     </style>
 
-    <style name="Widget.App.CardView" parent="@style/Widget.Material3.CardView.Outlined">
+    <style name="Widget.App.CardView.Outlined" parent="@style/Widget.Material3.CardView.Outlined">
         <item name="cardBackgroundColor">@color/bottom_navigation_background</item>
         <item name="strokeWidth">2dp</item>
         <item name="cardCornerRadius">16dp</item>
@@ -36,18 +36,17 @@
         <item name="itemTextColor">@color/system_accent_color</item>
     </style>
 
-    <style name="Widget.App.ButtonStyle" parent="@style/Widget.Material3.Button.OutlinedButton.Icon">
+    <style name="Widget.App.Button.OutlinedButton.Icon" parent="@style/Widget.Material3.Button.OutlinedButton.Icon">
         <item name="strokeColor">@color/system_accent_color</item>
+        <item name="backgroundTint">@color/bottom_navigation_background</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">16sp</item>
         <item name="iconSize">24dp</item>
         <item name="strokeWidth">2dp</item>
-        <item name="android:layout_height">72dp</item>
     </style>
 
     <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
         <item name="colorSurface">@color/bottom_navigation_background</item>
         <item name="materialAlertDialogBodyTextStyle">@style/TextAppearance.MaterialComponents.Body1</item>
-        <item name="android:backgroundDimAmount">0.64</item>
     </style>
 </resources>
